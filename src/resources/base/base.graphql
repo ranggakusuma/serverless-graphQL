@@ -1,0 +1,11 @@
+type Query {
+  appName: String!
+}
+
+type Error {
+  message: String!
+}
+
+type Mutation {
+  setAppName: String!
+}

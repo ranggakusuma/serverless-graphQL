@@ -1,0 +1,23 @@
+{
+  "name": "testserverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export $(egrep -v '^#' .env | xargs) && serverless offline start --dontPrintOutput"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.36",
+    "serverless-offline": "^4.4.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11"
+  }
+}
